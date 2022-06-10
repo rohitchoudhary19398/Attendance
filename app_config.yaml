@@ -1,0 +1,5 @@
+API_V1_STR: /api/v1
+APP_NAME: Attendance
+TEMP_DIR: "tempAttendance"
+INTERMEDIATE_SAVE: True
+SQLALCHEMY_DATABASE_URI: "mysql+pymysql://root:root@localhost/hrms"

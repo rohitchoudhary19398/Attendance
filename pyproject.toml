@@ -1,0 +1,28 @@
+[tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = ""
+name = "attendance"
+version = "1.0.0"
+
+[tool.poetry.dependencies]
+python = "3.9.10"
+ctlogging = "^0.1.1"
+fastapi = {extras = ["all"], version = "^0.74.1"}
+pandas = "^1.4.1"
+PyMuPDF = "^1.19.5"
+SQLAlchemy = "^1.4.32"
+pyodbc = "^4.0.32"
+alembic = "^1.7.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+mysql-connector-python = "^8.0.29"
+PyMySQL = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^22.1.0"
+snakeviz = "^2.1.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
