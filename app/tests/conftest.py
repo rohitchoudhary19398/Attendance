@@ -18,11 +18,3 @@ def client() -> Generator:
     with TestClient(app) as c:
         yield c
 
-
-@pytest.fixture(scope="module")
-def random_product() -> Dict[str, str]:
-    return {
-        "id": 1,
-        "name": "Test Product",
-        "price": 80,
-    }

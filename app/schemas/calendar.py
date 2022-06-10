@@ -12,12 +12,13 @@ class CalendarBase(BaseModel):
     year: Optional[int]
     day: Optional[int]
     is_holiday: Optional[bool]
+    hoilday_description: Optional[str]
     created_date: Optional[datetime]
     updated_date: Optional[datetime]
 
 
 class CalendarCreate(CalendarBase):
-    id: str = str(uuid4().hex)
+    id: str
 
 
 class CalendarUpdate(CalendarBase):
