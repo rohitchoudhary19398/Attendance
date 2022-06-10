@@ -13,13 +13,9 @@ class CRUDAttRecords(CRUDBase[AttRecords, AttRecordsCreate, AttRecordsUpdate]):
     logger = get_logger(__name__)
 
     def get_by_user_id(self, db: Session, user_id: str = None) -> List[AttRecords]:
-        self.logger.info("get_by_user_id")
-        print("get_by_user_id")
         query = db.query(self.model)
-        print(query)
         if user_id is not None:
             query = query.filter(AttRecords.user_id == user_id)
-        print(query)
         return query.all()
 
 

@@ -11,8 +11,8 @@ class AttRecordsBase(BaseModel):
     calender_id: Optional[str]
     is_present: Optional[bool]
     status: Optional[str]
-    in_time: Optional[float]
-    out_time: Optional[float]
+    in_time: Optional[str]
+    out_time: Optional[str]
     created_date: Optional[datetime]
     updated_date: Optional[datetime]
 
